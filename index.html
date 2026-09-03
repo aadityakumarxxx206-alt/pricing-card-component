@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SubscribeFormUI</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <main id="playing-cards">
+  <!-- Card 1 -->
   <div class="card">
-
-    <div class="left-content">
-      <h3 class="bold-text">Join our community 🚀</h3>
-      <p class="simple-text">Get weekly tech tips & updates straight to your inbox.</p>
-      
-      <p class="check"><i class="fa-solid fa-check"></i>Free Coding Resources</p>
-      <p class="check"><i class="fa-solid fa-check"></i>Weekly Tech Newsletter</p>
-      <p class="check"><i class="fa-solid fa-check"></i>No Spam Ever</p>
+    <div class="left">A♠</div>
+    <div class="middle">
+      <div>♠</div>
     </div>
+    <div class="right">A♠</div>
+  </div>
 
-    <form class="form-container" action="thankyou.html">
-      <label for="full-name">Full Name</label>
-      <input type="text" id="full-name" name="full-name" class="input-field" placeholder="Aaditya Kumar" required>
+  <!-- Card 2 -->
+  <div class="card">
+    <div class="left">K♥</div>
+    <div class="middle">
+      <div>♥</div>
+    </div>
+    <div class="right">K♥</div>
+  </div>
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" class="input-field" placeholder="aaditya@example.com" required>
-
-      <label for="topic">Topic Interest</label>
-      <input type="text" id="topic" name="interest" class="input-field" list="topic-list" placeholder="e.g. Full Stack">
-
-      <datalist id="topic-list">
-        <option value="Web Development">
-        <option value="Full Stack Development">
-        <option value="Cyber Security">
-      </datalist>
-
-      <button type="submit">Subscribe Now 🚀</button>
-    </form>
-
-  </div>  
-</body>
-</html>
+  <!-- Card 3 -->
+  <div class="card">
+    <div class="left">Q♦</div>
+    <div class="middle">
+      <div>♦</div>
+    </div>
+    <div class="right">Q♦</div>
+  </div>
+</main>
