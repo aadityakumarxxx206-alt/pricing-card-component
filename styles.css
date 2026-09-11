@@ -1,109 +1,89 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Great Vibes', cursive;
+    font-family: Arial;
 }
-
 body {
-    background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: rgb(172, 219, 219);
     min-height: 100vh;
 }
-
-.food-links {
+.design {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: white;
+    padding: 40px 100px;
 }
-
 h3 {
-    font-size: 40px;
-    color: brown;
+    font-size: 30px;
 }
-
+.red-text {
+    color: rgb(245, 110, 110);
+}
 .nav-links {
-    display: flex;
-    gap: 30px;
+   display: flex;
+   gap: 50px;
+}
+li {
     list-style: none;
 }
-
 a {
-    text-decoration: none;
-    color: rgb(82, 12, 12);
-    font-size: 18px;
-    transition: all 0.3s ease;
+   text-decoration: none;
+   color: #000;
+   font-size: 20px;
 }
-
 a:hover {
-    color: white;
-    padding: 5px 10px;
-    background-color: rgb(44, 40, 40);
-    border-radius: 5px;
-}
-
-.hero-section {
+    color: rgb(215, 215, 222);
+    padding: 11px;
+    border: 2px solid rgb(232, 227, 227);
+    background-color: rgb(19, 21, 19);
+    border-radius: 15px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+} 
+.button-group {
+    font-size: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
+    justify-content: flex-end;
+    gap: 30px;
+    text-align: center;
 }
-
-h1 {
-    font-size: 100px;
-    color: rgb(227, 143, 209);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.mexican {
-    color: rgb(185, 54, 54);
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-button {
+.submit, .my-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(65, 173, 65);
     cursor: pointer;
-    border: 2px solid white;
-    height: 50px;
-    width: 160px;
-    color: white;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.4); 
-    transition: all 0.3s ease;
+    box-shadow: 2px 2px 3px rgb(10, 10, 9)
 }
-
-button:hover {
-    color: red;
-    background-color: white;
+.my-btn {
+    background-color: rgb(52, 233, 52);
 }
-
-.chat-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+h2 {
+    font-size: 50px;
+    display: block;
+    margin-top: 250px;
+    width: 500px;
+    padding-left: 200px;
+}
+.small-text {
+   padding-left: 200px;
+   width: 500px; 
+   font-size: 20px;
+   font-weight: 500;
+   display: block;
+    margin-top: 20px;
+}
+.btn {
+    
+    display: block;
+    margin-top: 40px;
+    background-color: rgb(12, 234, 12);
+    height: 70px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(99, 219, 113);
+    transform: translateX(120px);
+    text-align: center;
     width: 200px;
-    height: 50px;
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
-.emoji {
-    font-size: 24px;
-}
