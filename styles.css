@@ -1,102 +1,83 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.label {
-  border: 2px solid black;
-  width: 270px;
-  margin: 20px auto;
-  padding: 0 7px;
-}
-
-header h1 {
+  font-family: Arial, sans-serif;
+  padding: 40px;
   text-align: center;
-  margin: -4px 0;
-  letter-spacing: 0.15px
+  background-color: brown;
 }
 
-p {
-  margin: 0;
+.card {
+  background-color: white;
+  max-width: 400px;
+  padding: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px gray;
+  transition: transform 0.3s, background-color 0.3s ease
+}
+
+.card:hover {
+  background-color: khaki;
+  transform: scale(1.1);
+}
+
+h1::before {
+  content: "🥳 ";
+}
+
+h1::after {
+  content: " 🥳";
+}
+
+.message {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.card-links {
+  margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.divider {
-  border-bottom: 1px solid #888989;
-  margin: 2px 0;
+.card-links a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: midnightblue;
+  transition: background-color 0.3s ease;
 }
 
-.bold {
-  font-weight: 800;
+.card-links a:hover {
+  background-color: orangered;
 }
 
-.large {
-  height: 10px;
+.card-links a:active {
+  background-color: midnightblue;
 }
 
-.large, .medium {
-  background-color: black;
-  border: 0;
+.card-links a:focus {
+  outline: 2px solid yellow;
 }
 
-.medium {
-  height: 5px;
+.card-links a:visited {
+  color: crimson;
 }
 
-.small-text {
-  font-size: 0.85rem;
+section {
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
 }
 
-
-.calories-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+section:hover {
+  transform: skewX(10deg);
 }
 
-.calories-info h2 {
-  margin: 0;
-}
-
-.left-container p {
-  margin: -5px -2px;
-  font-size: 2em;
-  font-weight: 700;
-}
-
-.calories-info span {
-  margin: -7px -2px;
-  font-size: 2.4em;
-  font-weight: 700;
-}
-
-.right {
-  justify-content: flex-end;
-}
-
-.indent {
-  margin-left: 1em;
-}
-
-.double-indent {
-  margin-left: 2em;
-}
-
-.daily-value p:not(.no-divider) {
-  border-bottom: 1px solid #888989;
-}
-
-.note {
-  font-size: 0.6rem;
-  margin: 5px 0;
-  padding: 0 8px;
-  text-indent: -8px;
+section:target {
+  display: block;
 }
