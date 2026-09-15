@@ -3,71 +3,58 @@
 }
 
 body {
+    background: linear-gradient(
+        45deg,
+        rgb(41, 135, 164) 30%,
+        rgb(196, 136, 236) 30%,
+        rgb(147, 201, 189) 40%
+    );
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     margin: 0;
-    background-color: rgb(230, 195, 54);
 }
 
-.box {
+.image-box {
     width: 100%;
     max-width: 400px;
-    padding: 25px;
-    border: 2px solid rgb(235, 123, 142);
-    border-radius: 15px;
-    background-color: rgb(235, 162, 45);
+    padding: 20px;
+    border: 3px solid rgb(46, 91, 240);
+    border-radius: 20px;
 }
 
-h1 {
-    font-size: 25px;
-    text-align: center;
-    color: rgb(20, 122, 201);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-label {
-    font-size: 18px;
-}
-
-input[type="email"],
-input[type="password"] {
+img {
     width: 100%;
-    padding: 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    font-size: 16px;
+    height: auto;
+    border-radius: 15px;
 }
 
-.remember {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(6, 68, 61);
 }
 
-.remember input {
-    width: auto;
+p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(67, 3, 40);
 }
 
-.btn {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+span {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 30px;
+    color: rgb(83, 236, 66);
     cursor: pointer;
 }
 
-.btn:hover {
-    opacity: 0.8;
-}
-
-a {
-    display: block;
-    margin-top: 15px;
-    text-align: center;
+button:hover {
+    color: red;
 }
