@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greeting Card</title>
-    <link href="styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="card" id="greeting-card">
-      <h1>Happy Birthday!</h1>
-      <p class="message">
-        Wishing you all the happiness and joy on your special day!
-      </p>
-      <div class="card-links">
-        <a href="#send" class="send-link">Send Card</a>
-        <a href="#share" class="share-link">Share on Social Media</a>
-      </div>
+
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="bugs.css">
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Login</h1>
+
+        <form>
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. email@example.com"
+                required
+            >
+
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                placeholder="Enter your password"
+                required
+            >
+
+            <div class="remember">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+        </form>
+
+        <a href="#">Forgot Password?</a>
+
     </div>
-    <section id="send">
-      <h2>Sending your card...</h2>
-      <p>Card successfully sent to your recipient!</p>
-    </section>
-    <section id="share">
-      <h2>Sharing your card...</h2>
-      <p>Your card was shared on social media!</p>
-    </section>
-  </body>
+
+</body>
 </html>

@@ -1,83 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  padding: 40px;
-  text-align: center;
-  background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(230, 195, 54);
 }
 
-.card {
-  background-color: white;
-  max-width: 400px;
-  padding: 40px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px gray;
-  transition: transform 0.3s, background-color 0.3s ease
+.box {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border: 2px solid rgb(235, 123, 142);
+    border-radius: 15px;
+    background-color: rgb(235, 162, 45);
 }
 
-.card:hover {
-  background-color: khaki;
-  transform: scale(1.1);
+h1 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(20, 122, 201);
 }
 
-h1::before {
-  content: "🥳 ";
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-h1::after {
-  content: " 🥳";
+label {
+    font-size: 18px;
 }
 
-.message {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.card-links {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-around;
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.card-links a {
-  text-decoration: none;
-  font-size: 1em;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: white;
-  background-color: midnightblue;
-  transition: background-color 0.3s ease;
+.remember input {
+    width: auto;
 }
 
-.card-links a:hover {
-  background-color: orangered;
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.card-links a:active {
-  background-color: midnightblue;
+.btn:hover {
+    opacity: 0.8;
 }
 
-.card-links a:focus {
-  outline: 2px solid yellow;
-}
-
-.card-links a:visited {
-  color: crimson;
-}
-
-section {
-  margin: 20px auto;
-  max-width: 600px;
-  background-color: whitesmoke;
-  padding: 20px;
-  border-radius: 10px;
-  display: none;
-}
-
-section:hover {
-  transform: skewX(10deg);
-}
-
-section:target {
-  display: block;
+a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
 }
